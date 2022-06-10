@@ -1,0 +1,269 @@
+/* Reset CSS */ 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Controlando o tamanho da fonte de forma global (rem) */
+html {
+    font-size: 16px;
+}
+
+
+/* Definindo a fonte do site */
+body {
+    font-family: 'Rajdhani', sans-serif;
+    background-color: #eee;
+}
+
+
+/* Estilo para Smartphones */
+
+.container {
+   background-color: #fff;
+} 
+
+header {
+    box-shadow: 0px 1px 20px rgba(139, 139, 139, 0.65);
+}
+
+header .container nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    padding-right: 20px;    
+}
+
+header .container nav .div-logo a img{
+    width: 120px;
+}
+
+header .container nav .div-menu {
+    display: none;
+}
+
+header .container nav .div-menu-mobile a img {
+    width: 25px;
+}
+
+
+main .container .banner img {
+    width: 100%;
+}
+
+
+main .container .seu-estilo {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 60px;    
+}
+
+main .container .seu-estilo .div-titulo-seu-estilo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}    
+
+main .container .seu-estilo .div-titulo-seu-estilo h1 {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: #000;    
+}
+
+main .container .seu-estilo .div-imagens-seu-estilo {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;   
+}
+
+main .container .seu-estilo .div-imagens-seu-estilo .div-img1-seu-estilo {
+    width: 201px;
+    margin-bottom: 30px;
+}
+
+main .container .seu-estilo .div-imagens-seu-estilo .div-img1-seu-estilo figure img {
+    width: 100%;
+}
+
+main .container .seu-estilo .div-imagens-seu-estilo .div-img2-seu-estilo {
+    width: 280px;
+}
+
+main .container .seu-estilo .div-imagens-seu-estilo .div-img2-seu-estilo figure img {
+    width: 100%;
+}
+
+
+main .precos {
+    background-color: #C2185B;
+    padding: 30px;
+}
+
+main .precos .div-titulo-precos {
+    display: flex;
+    justify-content: center;
+}
+
+main .precos .div-titulo-precos h2 {
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+
+main .precos .div-cards-precos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+/****************** @media - Media queries **************************************/
+
+/*** Responsividade para Tablets ***/
+@media (min-width: 481px){
+
+    main .container .seu-estilo .div-titulo-seu-estilo {        
+        margin-bottom: 30px;
+    }
+
+    main .container .seu-estilo .div-imagens-seu-estilo {        
+        align-items: center;   
+    }
+
+    main .container .seu-estilo .div-titulo-seu-estilo h1 {
+        font-size: 1.8rem;       
+    }
+
+    main .container .seu-estilo .div-imagens-seu-estilo .div-img1-seu-estilo {        
+        margin-bottom: 0px;
+        width: 170px;
+    }
+
+    main .container .seu-estilo .div-imagens-seu-estilo .div-img2-seu-estilo {
+        width: 250px;
+        margin-left: 20px;
+    }   
+}
+
+@media (min-width: 600px) {
+    main .container .seu-estilo .div-titulo-seu-estilo h1 {
+        font-size: 2rem;       
+    }
+
+    main .container .seu-estilo .div-imagens-seu-estilo .div-img1-seu-estilo {    
+        width: 190px;
+    }
+
+    main .container .seu-estilo .div-imagens-seu-estilo .div-img2-seu-estilo {
+        width: 270px;
+        margin-left: 40px;
+    }
+}
+
+
+/*** Responsividade para Leptops, Tablets maiores (paisagem) e Desktop menores ***/
+@media (min-width: 769px) {
+    header .container nav {
+        padding-left: 20px;        
+        padding-right: 30px;
+    }
+
+    header .container nav .div-menu-mobile img {
+        display: none;
+    }
+
+    header .container nav .div-menu {
+        display: block;
+        order: 1;
+    }
+    
+    header .container nav .div-menu ul {
+        display: flex; 
+        justify-content: space-around;       
+    }
+
+    header .container nav .div-menu ul li {
+        margin-left: 20px;
+        list-style-type: none;    
+    }
+
+    header .container nav .div-menu ul li a{
+         font-size: 0.9rem;
+         font-weight: 600;
+         color: #777; 
+         text-decoration: none;
+         transition: 0.2s; 
+    }
+
+    header .container nav .div-menu ul li a:hover {        
+        color: #999;        
+    }
+
+    main .container .seu-estilo .div-titulo-seu-estilo h1 {
+        font-size: 2.2rem;       
+    }
+
+    main .container .seu-estilo .div-imagens-seu-estilo .div-img1-seu-estilo {    
+        width: 220px;
+    }
+
+    main .container .seu-estilo .div-imagens-seu-estilo .div-img2-seu-estilo {
+        width: 330px;
+    }
+}
+
+@media (min-width: 940px) {
+    main .container .seu-estilo {       
+        margin-top: 70px;
+        margin-bottom: 160px;  
+    }
+
+    main .container .seu-estilo .div-titulo-seu-estilo {        
+        margin-bottom: 70px;
+    }
+
+    main .container .seu-estilo .div-titulo-seu-estilo h1 {
+        font-size: 2.8rem;       
+    }
+
+    main .container .seu-estilo .div-imagens-seu-estilo .div-img1-seu-estilo {    
+        width: 320px;
+    }
+
+    main .container .seu-estilo .div-imagens-seu-estilo .div-img2-seu-estilo {
+        width: 430px;        
+    }
+
+    
+}
+
+
+/*** Responsividade para Desktops mais largos e monitores ***/
+@media (min-width: 1280px){
+    .container {
+        width: 1280px;
+        margin: auto;
+    } 
+
+    header .container nav .div-menu ul li a{
+        font-size: 1.5rem;       
+   }
+    
+    main .container .seu-estilo .div-titulo-seu-estilo h1 {
+        font-size: 3.75rem;       
+    }
+
+    main .container .seu-estilo .div-imagens-seu-estilo .div-img1-seu-estilo {    
+        width: 400px;
+    }
+
+    main .container .seu-estilo .div-imagens-seu-estilo .div-img2-seu-estilo {
+        width: 600px;        
+    }
+}
+
+
