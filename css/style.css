@@ -25,9 +25,9 @@ body {
    background-color: #fff;
 } 
 
-header {
+/*header {
     box-shadow: 0px 1px 20px rgba(139, 139, 139, 0.65);
-}
+}*/
 
 header .container nav {
     display: flex;
@@ -106,18 +106,143 @@ main .precos {
 main .precos .div-titulo-precos {
     display: flex;
     justify-content: center;
+    margin-bottom: 30px;
 }
 
 main .precos .div-titulo-precos h2 {
     color: #fff;
-    font-size: 1.3rem;
+    font-size: 2rem;
     font-weight: 800;
 }
 
 main .precos .div-cards-precos {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
+
+main .precos .div-cards-precos article {
+    margin-bottom: 30px;
+}
+
+main .precos .div-cards-precos article div {
+    background-color: #fff;
+    padding: 10px;
+    margin-top: -4px;
+}
+
+main .precos .div-cards-precos article div p {
+    font-size: 1rem;
+    line-height: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-top: 8px;
+}
+
+main .precos .div-cards-precos article div p strong {
+    font-weight: 400;
+}
+
+main .produto-destaque {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;    
+    margin-top: 40px;
+    margin-bottom: 70px;
+}
+
+main .produto-destaque .produto-ver-detalhes {
+    margin-bottom: 30px;
+}
+
+main .produto-destaque .produto-ver-detalhes h2{
+    font-size: 1.1rem;    
+    margin-bottom: 30px;
+}
+
+main .produto-destaque .produto-ver-detalhes div{  
+   margin-bottom: 30px;
+}
+
+main .produto-destaque .produto-ver-detalhes div a {
+    background: #C2185B;
+    padding: 10px 30px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    border: 3px solid #C2185B; 
+    transition: 0.3s;  
+ }
+
+ main .produto-destaque .produto-ver-detalhes div a:hover {
+    background: #ffffff;    
+    color: #C2185B;
+ }
+
+main .produto-destaque .produto-ver-detalhes figure img{
+    width: 100%;
+}
+
+main .produto-destaque div figure img{
+    width: 100%;
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: #C2185B;
+    color: white;
+    padding: 30px;
+}
+
+footer div ul {
+    list-style-type: none;
+}
+
+footer div ul li {
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+}
+
+footer div ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer .div-logo-footer {
+    margin-bottom: 30px;    
+}
+
+footer .div-logo-footer p {
+    margin-top: -20px;
+    font-size: 0.87rem;
+    font-weight: 400;
+    width: 240px;
+}
+
+footer .categorias {
+    margin-bottom: 30px;
+}
+
+footer .categorias ul .footer-titulo-menu-categorias {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+footer .institucional {
+    margin-bottom: 30px;
+}
+
+footer .institucional ul .footer-titulo-menu-institucional {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
 
 
 
@@ -146,7 +271,28 @@ main .precos .div-cards-precos {
     main .container .seu-estilo .div-imagens-seu-estilo .div-img2-seu-estilo {
         width: 250px;
         margin-left: 20px;
+    } 
+    
+    main .produto-destaque {        
+        justify-content: center;
+        flex-direction: row;
+        /*padding: 30px;*/        
+    }
+
+    main .produto-destaque .produto-ver-detalhes {
+        margin-right: 30px;
+    } 
+
+    main .produto-destaque .produto-ver-detalhes h2 {
+        font-size: 0.84rem;
     }   
+}
+
+@media (min-width: 580px) {
+    main .precos .div-cards-precos article {
+        margin-bottom: 30px;
+        margin-left: 30px;
+    }
 }
 
 @media (min-width: 600px) {
@@ -161,6 +307,29 @@ main .precos .div-cards-precos {
     main .container .seu-estilo .div-imagens-seu-estilo .div-img2-seu-estilo {
         width: 270px;
         margin-left: 40px;
+    }
+    
+    main .produto-destaque .produto-ver-detalhes h2 {
+        font-size: 1.1rem;
+    }     
+
+    footer {       
+        justify-content: space-around;        
+        flex-direction: row;
+        align-items: center; 
+        padding: 0;       
+    } 
+    
+    footer .div-logo-footer {        
+        margin-left: 25px;
+    }
+
+    footer .categorias {
+        margin-top: 52px;
+    }
+
+    footer .institucional {
+        margin-top: 72px;
     }
 }
 
@@ -214,6 +383,31 @@ main .precos .div-cards-precos {
     main .container .seu-estilo .div-imagens-seu-estilo .div-img2-seu-estilo {
         width: 330px;
     }
+
+    main .precos .div-titulo-precos h2 {        
+        font-size: 2.2rem;        
+    }
+
+    main .produto-destaque {       
+        margin-top: 80px;
+    }
+
+    main .produto-destaque .produto-ver-detalhes h2 {
+        font-size: 1.4rem;
+    }
+    
+    main .produto-destaque .produto-ver-detalhes div {
+        margin-bottom: 40px;
+    }
+
+    main .produto-destaque .produto-ver-detalhes div a {        
+        font-size: 1.3rem;
+        padding: 15px 35px;
+    }
+
+    footer .div-logo-footer {
+        width: 350px    
+    }
 }
 
 @media (min-width: 940px) {
@@ -238,7 +432,48 @@ main .precos .div-cards-precos {
         width: 430px;        
     }
 
+    main .precos .div-titulo-precos h2 {        
+        font-size: 2.4rem;        
+    }
     
+    main .precos .div-titulo-precos {        
+        margin-bottom: 50px;
+        margin-top: 20px;
+    }
+
+    main .precos .div-cards-precos article {
+        margin-bottom: 40px;        
+    }
+
+    main .produto-destaque {       
+        margin-top: 120px;
+    }
+
+    main .produto-destaque .produto-ver-detalhes h2 {
+        font-size: 1.9rem;
+    } 
+
+    main .produto-destaque .produto-ver-detalhes div {
+        margin-bottom: 50px;
+    }
+
+    main .produto-destaque .produto-ver-detalhes div a {        
+        font-size: 1.8rem;
+        padding: 20px 70px;
+    }
+
+    footer {       
+        justify-content: start;
+    } 
+    
+    footer .div-logo-footer {
+        width: 440px;
+        margin-left: 100px;       
+    }
+
+    footer .categorias {        
+        width: 200px;
+    }    
 }
 
 
@@ -264,6 +499,33 @@ main .precos .div-cards-precos {
     main .container .seu-estilo .div-imagens-seu-estilo .div-img2-seu-estilo {
         width: 600px;        
     }
+
+    main .precos .div-titulo-precos h2 {        
+        font-size: 2.75rem;        
+    }
+    
+    main .produto-destaque .produto-ver-detalhes h2 {        
+        font-size: 2.4rem;
+    } 
+
+    main .produto-destaque .produto-ver-detalhes div {  
+        margin-top: 45px;      
+        margin-bottom: 76px;
+    }
+
+    main .produto-destaque .produto-ver-detalhes div a {        
+        font-size: 2.4rem;
+        padding: 23px 100px;
+    }
+
+    footer .div-logo-footer {
+        width: 540px;
+        margin-left: 110px;       
+    }
+
+    footer .categorias {        
+        width: 240px;
+    }   
 }
 
 
