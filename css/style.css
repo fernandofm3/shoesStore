@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 
@@ -18,16 +19,15 @@ body {
     background-color: #eee;
 }
 
-
 /* Estilo para Smartphones */
 
 .container {
    background-color: #fff;
 } 
 
-/*header {
+header {
     box-shadow: 0px 1px 20px rgba(139, 139, 139, 0.65);
-}*/
+}
 
 header .container nav {
     display: flex;
@@ -243,6 +243,109 @@ footer .institucional ul .footer-titulo-menu-institucional {
     font-weight: 600;
 }
 
+/************** Formulário - Trabalhe conosco *********************/
+    
+main .container .sec-trabalhe-conosco {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 0px 20px 0px 20px;   
+}
+
+main .container .sec-trabalhe-conosco .div-principal-form form h1{
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #575757;
+}
+
+main .container .sec-trabalhe-conosco .div-principal-form {   
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;    
+}
+
+main .container .sec-trabalhe-conosco .div-principal-form form {   
+    display: flex;
+    justify-content: start;    
+    flex-direction: column;    
+}
+
+main .container .sec-trabalhe-conosco .div-principal-form form label {
+    margin-top: 15px;   
+    margin-bottom: 3px;
+    color: #9B9B9B;
+}
+
+main .container .sec-trabalhe-conosco .div-principal-form form input {
+   padding: 5px;
+   border: 1px solid #9B9B9B;
+}
+
+main .container .sec-trabalhe-conosco .div-principal-form form .div-form-disponibilidade {    
+    margin-top: 5px;
+}
+
+main .container .sec-trabalhe-conosco .div-principal-form form .div-form-disponibilidade div label {   
+    margin-left: 3px;
+    font-size: 0.8rem;
+}
+
+main .container .sec-trabalhe-conosco .div-principal-form form .div-form-seu-contato { 
+    display: flex;    
+    margin-top: 5px;
+}  
+
+main .container .sec-trabalhe-conosco .div-principal-form form .div-form-seu-contato div {
+    margin-right: 25px;    
+} 
+
+main .container .sec-trabalhe-conosco .div-principal-form form .div-form-seu-contato div label {
+    margin-left: 3px;
+    font-size: 0.8rem;
+}
+
+main .container .sec-trabalhe-conosco .div-principal-form form textarea {
+   padding: 5px;
+   width: 100%;
+   height: 80px;
+   border: 1px solid #9B9B9B;  
+}
+
+main .container .sec-trabalhe-conosco .div-principal-form form .div-upload {
+    margin-top: 15px;
+}
+
+main .container .sec-trabalhe-conosco .div-principal-form form .div-upload input {
+    margin-top: 3px;
+    border: none;
+    padding: 0;
+}
+
+main .container .sec-trabalhe-conosco .div-principal-form form .btn-form-enviar{
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: white;
+    border: 1px solid #C2185B;
+    background-color: #C2185B;
+    margin-top: 18px;
+    width: 100%;
+    padding: 3px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+main .container .sec-trabalhe-conosco .div-principal-form form .btn-form-enviar:hover {    
+    color: #C2185B;    
+    background-color: #fff;    
+}
+
+
+main .container .sec-trabalhe-conosco .div-principal-form .div-texto-formulario {     
+   color:#575757;
+   margin-top: 40px;
+}
+
+/******************************************************************/
 
 
 
@@ -285,7 +388,25 @@ footer .institucional ul .footer-titulo-menu-institucional {
 
     main .produto-destaque .produto-ver-detalhes h2 {
         font-size: 0.84rem;
-    }   
+    } 
+    
+    /**** Formulário *****/
+    main .container .sec-trabalhe-conosco .div-principal-form form h1 {
+        font-size: 1.6rem;
+    }
+
+    main .container .sec-trabalhe-conosco .div-principal-form form .div-form-disponibilidade {  
+        display: flex;          
+    }
+
+    main .container .sec-trabalhe-conosco .div-principal-form form .div-form-disponibilidade div {  
+       margin-right: 20px;          
+    }
+
+    main .container .sec-trabalhe-conosco .div-principal-form form .div-form-seu-contato div {
+        margin-right: 50px;    
+    }
+    /*********************/
 }
 
 @media (min-width: 580px) {
@@ -330,7 +451,7 @@ footer .institucional ul .footer-titulo-menu-institucional {
 
     footer .institucional {
         margin-top: 72px;
-    }
+    }    
 }
 
 
@@ -408,6 +529,22 @@ footer .institucional ul .footer-titulo-menu-institucional {
     footer .div-logo-footer {
         width: 350px    
     }
+
+    /*** Formulário ***/
+    main .container .sec-trabalhe-conosco .div-principal-form {        
+        flex-direction: row;
+        justify-content: space-around;            
+    }
+
+    main .container .sec-trabalhe-conosco .div-principal-form form{        
+        width: 350px;
+    }   
+    
+    main .container .sec-trabalhe-conosco .div-principal-form .div-texto-formulario{
+        width: 300;
+        margin-top: 60px;
+    }    
+    /******************/
 }
 
 @media (min-width: 940px) {
@@ -473,7 +610,23 @@ footer .institucional ul .footer-titulo-menu-institucional {
 
     footer .categorias {        
         width: 200px;
+    } 
+
+    /*** Formulário ***/
+    main .container .sec-trabalhe-conosco .div-principal-form form h1 {
+        font-size: 1.8rem;
+    }
+
+    main .container .sec-trabalhe-conosco .div-principal-form form{        
+        width: 450px;
+    }   
+    
+    main .container .sec-trabalhe-conosco .div-principal-form .div-texto-formulario{
+        width: 350;        
     }    
+    /******************/
+    
+    
 }
 
 
@@ -525,7 +678,26 @@ footer .institucional ul .footer-titulo-menu-institucional {
 
     footer .categorias {        
         width: 240px;
+    }  
+    
+    /*** Formulário ***/
+    main .container .sec-trabalhe-conosco {    
+        padding: 0px 80px 0px 80px;
+    }
+
+    main .container .sec-trabalhe-conosco .div-principal-form form h1 {
+        font-size: 2.4rem;
+    }
+
+    main .container .sec-trabalhe-conosco .div-principal-form form{        
+        width: 538px;
     }   
+    
+    main .container .sec-trabalhe-conosco .div-principal-form .div-texto-formulario{
+        width: 464px;
+        margin-top: 75px;        
+    }    
+    /******************/
 }
 
 

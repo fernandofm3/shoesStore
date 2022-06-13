@@ -1,0 +1,152 @@
+<DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Shoes Store</title>
+    
+        <!--Fonte-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        
+        <!--MEu CSS-->
+        <link rel="stylesheet" href="./css/style.css">
+    
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <div class="container">
+                    <nav>            
+                        <div class="div-logo">
+                            <a href="./index.html">
+                                <img src="./img/logo-color.png" alt="Imagem logo da empresa.">
+                            </a>
+                        </div>
+                        <div class="div-menu">
+                            <ul>
+                                <li><a href="#">TODOS OS PRODUTOS</a></li>                    
+                                <li><a href="#">COLEÇÕES</a></li>                    
+                                <li><a href="#">OUTLET</a></li>                    
+                            </ul>
+                        </div> 
+                        <div class="div-menu-mobile">
+                            <a href="#">
+                                <img src="./img/hamburguer.svg" alt="Imagem botão hamburguer">
+                            </a>
+                        </div>
+                    </nav>
+                </div>
+            </header> 
+            
+            <main>
+                <div class="container">
+                    <section class="sec-trabalhe-conosco">
+                        
+                        <div class="div-principal-form">
+                            <form action="./trabalheConosco.html" method="POST">
+                                <h1>Faça parte do nosso time</h1>
+
+                                <label for="nome">Nome</label>
+                                <input type="text" id="nome" name="nome" required="">
+
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required="">
+
+                                <label for="tel">Telefone</label>
+                                <input type="tel" id="tel" name="tel" pattern="[0-9]{2}-[0-9]{4}-[0-9]{4}" required="">
+
+                                <label for="departamentos">Departamentos</label>
+                                <input type="departamentos" id="departamentos" name="departamentos" required="">
+                               
+                                <label>Disponibilidade</label>
+                                <div class="div-form-disponibilidade">
+                                    <div>
+                                        <input type="checkbox" id="integral" name="integral" value="integral"><label for="integral">Integral(8h)</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" id="meio_periodo" name="meio_periodo" value="meio-periodo"><label for="meio_periodo">Meio período(4h)</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" id="freelancer" name="freelancer" value="freelancer"><label for="freelancer">Freelancer</label>
+                                    </div>
+                                </div>
+
+                                <label>Qual a melhor forma para entrarmos em contato com você?</label>
+                                <div class="div-form-seu-contato">
+                                    <div>
+                                        <input type="radio" id="email_contato" name="seu_contato" value="email"><label for="email_contato">E-mail</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="ligacao" name="seu_contato" value="licacao"><label for="ligacao">Ligação</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="whatsapp" name="seu_contato" value="whatsapp"><label for="whatsapp">Whatsapp</label>
+                                    </div>
+                                </div>
+
+                                <label for="msg_form">Mensagem</label>
+                                <textarea name="msg_form" id="msg_form"></textarea>
+
+                                <div class="div-upload">
+                                    <label for="curriculo">Currículo</label>
+                                    <input type="file" id="curriculo" name="corriculo">
+                                </div>
+
+                                <button type="submit" class="btn-form-enviar">enviar</button>
+                            </form>
+                        
+                            <div class="div-texto-formulario">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br>
+                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br><br>
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </main>
+           
+            <footer>            
+                <div class="div-logo-footer">
+                    <figure>
+                        <img src="./img/logo-white.png" alt="Imgaem logo da empresa.">
+                    </figure>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                </div>
+    
+                <div class="categorias">
+                    <ul>
+                        <li class="footer-titulo-menu-categorias">categorias</li>
+                        <li><a href="#">sandálias</a></li>
+                        <li><a href="#">botas</a></li>
+                        <li><a href="#">tênis</a></li>
+                        <li><a href="#">oxford</a></li>
+                        <li><a href="#">coturnos</a></li>
+                    </ul>
+                </div>
+    
+                <div class="institucional">
+                    <ul>
+                        <li class="footer-titulo-menu-institucional">institucional</li>
+                        <li><a href="#">sobre nós</a></li>
+                        <li><a href="#">perguntas frequentes</a></li>
+                        <li><a href="#">politica de privacidade</a></li>
+                        <li><a href="#">rastreamento de pedidos</a></li>
+                        <li><a href="./trabalheConosco.html">trabalhe conosco</a></li>
+                        <li><a href="#">contato</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>    
+    </body>
+    </html>
