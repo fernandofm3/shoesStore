@@ -21,7 +21,7 @@ body {
 
 /* Estilo para Smartphones */
 
-.container {
+.container {   
    background-color: #fff;
 } 
 
@@ -49,9 +49,22 @@ header .container nav .div-menu-mobile a img {
     width: 25px;
 }
 
+.div-promocao {    
+    position: sticky;
+    top: 0;    
+    padding: 15px;
+    background-color: #C2185B;
+    text-align: center;     
+    z-index: 15;   
+}
 
-main .container .banner img {
-    width: 100%;
+.div-promocao h2 {
+    font-size: 20px;
+    color: #fff;    
+}
+
+main .container .banner img {  
+    width: 100%;   
 }
 
 
@@ -325,7 +338,8 @@ main .container .sec-trabalhe-conosco .div-principal-form form .btn-form-enviar{
     font-size: 0.9rem;
     font-weight: 700;
     color: white;
-    border: 1px solid #C2185B;
+    /*border: 1px solid #C2185B;*/
+    border: none;
     background-color: #C2185B;
     margin-top: 18px;
     width: 100%;
@@ -336,7 +350,8 @@ main .container .sec-trabalhe-conosco .div-principal-form form .btn-form-enviar{
 
 main .container .sec-trabalhe-conosco .div-principal-form form .btn-form-enviar:hover {    
     color: #C2185B;    
-    background-color: #fff;    
+    background-color: #fff;
+    box-shadow: rgb(139 139 139 / 65%) 0px 5px 10px;    
 }
 
 
